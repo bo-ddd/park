@@ -25,7 +25,6 @@ body{
 
 .main{
   display: flex;
-  gap: 0 30px;
 }
 
 .menu{
