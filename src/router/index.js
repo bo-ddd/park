@@ -11,7 +11,7 @@ const routes = [
     component: HomeView
   },
   {
-    // 
+    // 环境质量
     path: '/environmentalQuality',
     name: 'EnvironmentalQuality',
     component: () => import('../views/environmentalQuality/EnvironmentalQuality.vue')
@@ -21,7 +21,13 @@ const routes = [
     path: '/energyManagement',
     name: 'energyManagement',
     component: () => import('../views/energyManagement/EnergyManagement.vue')
-  }
+  },
+  {
+    //企业环保登记
+    path: '/enterpriseEnvironmentalProtection',
+    name: 'enterpriseEnvironmentalProtection',
+    component: () => import('../views/enterpriseEnvironmentalProtection/enterpriseEnvironmentalProtection.vue')
+  },
 ]
 
 const router = new VueRouter({
