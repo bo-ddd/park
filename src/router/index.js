@@ -11,9 +11,16 @@ const routes = [
     component: HomeView
   },
   {
+    // 
     path: '/environmentalQuality',
     name: 'EnvironmentalQuality',
     component: () => import('../views/environmentalQuality/EnvironmentalQuality.vue')
+  },
+  {
+    //能源管理
+    path: '/energyManagement',
+    name: 'energyManagement',
+    component: () => import('../views/energyManagement/EnergyManagement.vue')
   }
 ]
 
