@@ -32,7 +32,7 @@ const routes = [
     //公文管理
     path: '/kumon',
     name: 'kumon',
-    component: () => import('../views/kumon/Kumon.vue')
+    component: () => import('../views/kumon/KumonViwe.vue')
   }, 
 ]
 
