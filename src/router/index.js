@@ -38,6 +38,14 @@ const routes = [
     path: '/kumonManagement',
     name: 'kumonManagement',
     component: () => import('../views/kumonManagement/kumonManagement.vue')
+  
+  },
+  {
+     //安全生产信息
+     path: '/prdInfo',
+     name: 'prdInfo',
+     component: () => import('../views/prdInfo/prdInfo.vue')
+  
   },
 ]
 
