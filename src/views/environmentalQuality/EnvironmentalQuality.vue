@@ -44,11 +44,11 @@ export default {
 </script>
 
 <style scoped>
-/* 
+
 .environmental-quality{
   display: grid;
   grid-template-rows: 80vh 10vh;
-} */
+}
 
 :deep(.el-carousel){
   /* max-width: 86vw;
