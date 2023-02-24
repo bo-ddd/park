@@ -1,7 +1,7 @@
 <template>
     <div class="main">
       <div class="menu"><Layout></Layout></div>
-      <div>
+      <div class="container">
         <router-view></router-view>
       </div>
     </div>
@@ -28,8 +28,11 @@ body{
 }
 
 .menu{
-  min-width: 30vh;
+  min-width: 200px;
   height: 100vh;
+}
+.container{
+  width: cala(100vw - 200px);
 }
 
 

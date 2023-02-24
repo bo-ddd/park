@@ -28,8 +28,19 @@ const routes = [
     name: 'enterpriseEnvironmentalProtection',
     component: () => import('../views/enterpriseEnvironmentalProtection/enterpriseEnvironmentalProtection.vue')
   },
+  {
+    //应急模拟训练
+    path: '/meetDrill',
+    name: 'meetDrill',
+    component: () => import('../views/meet/meetDrill.vue')
+  },
+  {
+    //应急检测预警
+    path: '/meetEarly',
+    name: 'meetEarly',
+    component: () => import('../views/meet/meetEarly.vue')
+  },
 ]
-
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
