@@ -28,6 +28,15 @@ const routes = [
     name: 'enterpriseEnvironmentalProtection',
     component: () => import('../views/enterpriseEnvironmentalProtection/enterpriseEnvironmentalProtection.vue')
   },
+  {
+    // 园区经济管理
+    path:'/EconomyManage',
+    name:'EconomyManage',
+    meta:{
+      label:'经济管理'
+    },
+    component:()=>import("../views/ParkEconomyManage/EconomyManage.vue")
+  }
 ]
 
 const router = new VueRouter({
