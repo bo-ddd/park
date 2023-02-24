@@ -27,7 +27,13 @@ const routes = [
     path: '/enterpriseEnvironmentalProtection',
     name: 'enterpriseEnvironmentalProtection',
     component: () => import('../views/enterpriseEnvironmentalProtection/enterpriseEnvironmentalProtection.vue')
-  },
+  }, 
+  {
+    //公文管理
+    path: '/kumon',
+    name: 'kumon',
+    component: () => import('../views/kumon/Kumon.vue')
+  }, 
 ]
 
 const router = new VueRouter({
