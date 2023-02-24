@@ -28,6 +28,12 @@ const routes = [
     name: 'enterpriseEnvironmentalProtection',
     component: () => import('../views/enterpriseEnvironmentalProtection/enterpriseEnvironmentalProtection.vue')
   },
+  {
+    //安全生产信息
+    path: '/prdInfo',
+    name: 'prdInfo',
+    component: () => import('../views/prdInfo/prdInfo.vue')
+  },
 ]
 
 const router = new VueRouter({
