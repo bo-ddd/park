@@ -57,7 +57,6 @@
             || doc.documentElement.clientWidth
             || doc.body.clientWidth;
 
-        console.log(clientWidth)
         if (!clientWidth) return;
         var fz;
         var width = clientWidth;
