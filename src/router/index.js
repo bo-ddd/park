@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/home/HomeView'
-
+import LoginView from '@/LoginView.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -9,6 +9,11 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/loginview',
+    name: 'loginview',
+    component: LoginView
   },
   {
     // 环境质量
@@ -27,6 +32,12 @@ const routes = [
     path: '/enterpriseEnvironmentalProtection',
     name: 'enterpriseEnvironmentalProtection',
     component: () => import('../views/enterpriseEnvironmentalProtection/enterpriseEnvironmentalProtection.vue')
+  },
+  {
+    // 公文管理
+    path: '/kumonManagement',
+    name: 'kumonManagement',
+    component: () => import('../views/kumonManagement/kumonManagement.vue')
   },
 ]
 
