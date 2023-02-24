@@ -28,12 +28,11 @@ body{
 }
 
 .menu{
-  min-width: 200px;
+  width: 200px;
   height: 100vh;
 }
 .container{
-  width: cala(100vw - 200px);
+  width: calc(100vw - 200px);
 }
-
 
 </style>

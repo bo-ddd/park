@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/home/HomeView'
-
+import LoginView from '@/LoginView.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -9,6 +9,11 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/loginview',
+    name: 'loginview',
+    component: LoginView
   },
   {
     // 环境质量
@@ -39,6 +44,27 @@ const routes = [
     path: '/meetEarly',
     name: 'meetEarly',
     component: () => import('../views/meet/meetEarly.vue')
+  },{
+    // 园区经济管理
+    path:'/EconomyManage',
+    name:'EconomyManage',
+    meta:{
+      label:'经济管理'
+    },
+    component:()=>import("../views/ParkEconomyManage/EconomyManage.vue")
+  },
+  {
+    // 公文管理
+    path: '/kumonManagement',
+    name: 'kumonManagement',
+    component: () => import('../views/kumonManagement/kumonManagement.vue')
+  
+  },
+  {
+     //安全生产信息
+     path: '/prdInfo',
+     name: 'prdInfo',
+     component: () => import('../views/prdInfo/prdInfo.vue')
   },
 ]
 const router = new VueRouter({
