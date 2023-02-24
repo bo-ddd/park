@@ -28,7 +28,7 @@ body{
 }
 
 .menu{
-  width: 30vh;
+  min-width: 30vh;
   height: 100vh;
 }
 
