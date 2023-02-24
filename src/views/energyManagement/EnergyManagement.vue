@@ -282,10 +282,7 @@ option && myChart.setOption(option);
   height: 280px;
 }
 
-.status{
-  width: 500px;
-  height: 260px;
-}
+
 
 .earlyWarning-item {
   height: 70px;
